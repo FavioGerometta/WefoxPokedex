@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WefoxPokedex</string>
+    <string name="title_backpack">My backpack</string>
+    <string name="title_search">Catch a new Pokemon</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">
+        com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+    </string>
+    <string name="title_activity_detail">My Pokemon</string>
+
+    <string name="no_features">No Features</string>
+    <string name="retry">Retry</string>
+    <string name="tap_to_retry">Tap to Retry</string>
+
+    <!-- Search screen -->
+    <string name="search_error_no_internet">No internet connection, try later!</string>
+    <string name="search_empty_place_holder">Search for new pokemons!</string>
+    <string name="search_error_repeated">You already have this one, keep searching!</string>
+    <string name="catch_pokemon">Catch!</string>
+    <string name="search_pokemon">Start searching</string>
+    <string name="leave_pokemon">Search another one</string>
+</resources>

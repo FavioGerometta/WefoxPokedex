@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+                name="pokemon"
+                type="ar.com.favio.wefoxpokedex.core.data.model.Pokemon"
+        />
+    </data>
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/textView_pokemon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView_pokemon"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="11sp"
+                android:paddingBottom="150dp"
+                android:text="@{pokemon.name}"/>
+
+        <ImageView android:id="@+id/imageView_pokemon"
+                   android:layout_marginTop="100dp"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:textAlignment="center"
+                   android:textColor="@color/textColor"
+                   android:textSize="22sp"
+                   android:scaleType="fitXY"
+        />
+
+    </RelativeLayout>
+</layout>

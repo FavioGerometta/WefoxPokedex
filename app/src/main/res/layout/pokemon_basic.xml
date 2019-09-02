@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+                name="pokemon"
+                type="ar.com.favio.wefoxpokedex.core.data.model.Pokemon"
+        />
+    </data>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+        <TextView
+                android:id="@+id/textView_pokemon_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView_pokemon"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="44sp"
+                android:paddingBottom="150dp"
+                android:text="@{pokemon.name}"/>
+        <TextView
+                android:id="@+id/textView_pokemon_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/seven_grid_unit"
+                android:fontFamily="sans-serif-medium"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text='@{String.format("Height: %1s   Weight: %2s", pokemon.height, pokemon.weight)}'
+                android:textColor="@color/textColorSecondary"
+                android:textSize="@dimen/text_size_subhead_material"
+        />
+
+        <ImageView android:id="@+id/imageView_pokemon"
+                   android:layout_marginTop="100dp"
+                   android:layout_width="400dp"
+                   android:layout_height="400dp"
+                   android:textAlignment="center"
+                   android:textColor="@color/textColor"
+                   android:textSize="22sp"
+                   android:scaleType="fitXY"
+                   />
+        <TextView
+                android:visibility="gone"
+                android:id="@+id/textView_pokemon_dateTime"
+                android:layout_below="@+id/imageView_pokemon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="11sp"
+                android:text='@{String.format("Capture Date: %1s", pokemon.dateTime)}'/>
+    </RelativeLayout>
+</layout>
+

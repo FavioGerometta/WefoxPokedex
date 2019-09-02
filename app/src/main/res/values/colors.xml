@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#eb7100</color>
+    <color name="colorPrimaryLight">#ffa13f</color>
+    <color name="colorPrimaryDark">#b24200</color>
+    <color name="colorPrimarySecondary">#ffffff</color>
+    <color name="colorAccent">#e53935</color>
+
+    <color name="listBgColor">#FAFAFA</color>
+
+    <!--Text Colors-->
+    <color name="titleColor">#545454</color>
+    <color name="softEngageTextColor">#545454</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="textColorSecondary">#eb7100</color>
+    <color name="scoreBoardColor">#ffd26f</color>
+    <color name="tabActiveItemColor">#1A1A1A</color>
+    <color name="accentColor">#82C9C2</color>
+
+    <!--Icon Colors-->
+    <color name="iconActiveColor">#ffd26f</color>
+    <color name="iconInactiveColor">#ffffff</color>
+
+</resources>
